@@ -27,7 +27,19 @@ app.post("/product/new", (req, res) => {
     name: req.body.name,
     description: req.body.description,
     size: req.body.size,
-    imageUrls: req.body.imageUrls
+    imageUrls: req.body.imageUrls,
+    price: req.body.price,
+    timeStamp: req.body.timeStamp,
+    category: req.body.category,
+    discountPercent: req.body.discountPercent,
+    features: req.body.features,
+    id: req.body.id,
+    inStock: req.body.inStock,
+    quantity: req.body.quantity,
+    piece: req.body.piece,
+    // collection: req.body.collection,
+    discountPrice: req.body.discountPrice,
+    favclicks: req.body.favclicks,
   });
 
   product.save();
