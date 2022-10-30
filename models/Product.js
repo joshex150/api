@@ -2,23 +2,22 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ProductSchema = new Schema({
-	
-	name: {
-		type: String,
-		required: false
-	},
-	description: {
-		type: String,
-		required: false
-	},
-	size: {
-		type: String,
-		required: false
-	},
-	timestamp: {
-		type: String,
-		default: Date.now()
-	}
+	name: String,
+	price: Number,
+	timeStamp: { seconds: Number, nanoseconds: Number },
+	category: String,
+	description: String,
+	discountPercent: Number,
+	features: [String],
+	id: String,
+	imageUrls: [String],
+	inStock: boolean,
+	quantity: Number,
+	size: [String],
+	piece: Number,
+	collection: String,
+	discountPrice: Number,
+	favclicks: Number
 });
 
 const Product = mongoose.model("Product", ProductSchema);
