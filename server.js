@@ -51,4 +51,4 @@ app.put("/product/update/:id", async (req, res) => {
   res.json(product);
 });
 
-app.listen(3001);
+app.listen(process.env.PORT || 3001);
