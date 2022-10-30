@@ -6,7 +6,6 @@
   "engines": {
     "nodemon": "2.0.9"
   },
-  "proxy": "http://localhost:3000",
   "scripts": {
     "start": "nodemon server.js"
   },
