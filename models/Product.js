@@ -11,7 +11,7 @@ const ProductSchema = new Schema({
 	features: [String],
 	id: String,
 	imageUrls: [String],
-	inStock: boolean,
+	inStock: Boolean,
 	quantity: Number,
 	size: [String],
 	piece: Number,
