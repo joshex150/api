@@ -27,6 +27,7 @@ app.post("/product/new", (req, res) => {
     name: req.body.name,
     description: req.body.description,
     size: req.body.size,
+    imageUrls: req.body.imageUrls
   });
 
   product.save();
